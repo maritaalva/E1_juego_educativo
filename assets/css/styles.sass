@@ -1,0 +1,886 @@
+/* End Reset browser styles
+/* Custom styles
+
+html, body
+  height: 100%
+  background-color: #ffffff
+  opacity: 1
+  background-image: radial-gradient(#000000 1px, transparent 0.8px), radial-gradient(#000000 1px, #ffffff 0.8px)
+  background-size: 4px 4px
+  background-position: 0 0, 6px, 6px
+
+/*////// CARGA DE FUENTES //////
+
+@font-face
+  font-family: 'FT88-Regular'
+  src: url(../fonts/FT88-Regular.woff) format("woff"), url(../fonts/FT88-Regular.woff2) format("woff2")
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: 'FT88-Bold'
+  src: url(../fonts/FT88-Bold.woff) format("woff"), url(../fonts/FT88-Bold.woff2) format("woff2")
+  font-weight: 400
+  font-style: normal
+
+/*///// PORTADA VIDEOJUEGO //////
+
+.portada
+  background-color: white
+  display: flex
+  flex-direction: column
+  height: 80%
+  width: 15.625rem
+  margin: 3.75rem auto
+  align-items: center
+  justify-content: center
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+
+#imgnokia
+  width: 200px
+
+#iniciar_juego
+  cursor: pointer
+  font-family: 'FT88-Regular'
+  font-size: 18px
+  margin-top: 2rem
+  display: flex
+  justify-content: center
+  align-items: center
+  line-height: -4px
+  letter-spacing: -1px
+  height: 46px
+  width: 98px
+  mix-blend-mode: darken
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 5px 5px 0px #000000
+  background-color: #ffffff
+  opacity: 1
+  background-image: radial-gradient(#000000 0.5px, #ffffff 0.5px)
+  background-size: 4px 4px
+
+#iniciar_juego_m
+  cursor: pointer
+  font-family: 'FT88-Regular'
+  font-size: 1rem
+  margin-top: 2rem
+  display: none
+  justify-content: center
+  align-items: center
+  line-height: -4px
+  letter-spacing: -1px
+  height: 46px
+  width: 98px
+  mix-blend-mode: darken
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 5px 5px 0px #000000
+  background-color: #ffffff
+  opacity: 1
+  background-image: radial-gradient(#000000 0.5px, #ffffff 0.5px)
+  background-size: 4px 4px
+
+/*///// MENÚ NIVELES+INSTRUCCIONES //////
+
+.menu_information
+  display: none
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  position: fixed
+  align-items: center
+
+.head_menu
+  display: flex
+  height: 6rem
+  margin-top: 2rem
+  flex-direction: column
+  justify-content: center
+
+#instruction
+  color: white
+  line-height: 2rem
+  font-family: 'FT88-Regular'
+  font-size: 1.25rem
+  height: 2rem
+  padding: 0 2rem 0
+  background-color: black
+  border: 1.5px inset solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+  overflow-wrap: break-word
+  text-align: center
+  width: max-content
+
+#police_menu
+  width: 4rem
+  position: relative
+  left: 50%
+
+.menuContainer
+  height: 6rem
+  display: flex
+  align-items: center
+  flex-direction: row
+  justify-content: space-around
+
+.lvl_info_container
+  display: flex
+  gap: 3.5rem
+  align-items: flex-start
+  flex-direction: row
+  justify-content: space-around
+
+.lv_info
+  opacity: 0
+  font-family: 'FT88-Regular'
+  font-size: 1rem
+  color: white
+  width: 12rem
+  height: fit-content
+  padding: 0 1rem 0
+  background-color: black
+  overflow-wrap: break-word
+
+.lvl_title
+  font-family: 'FT88-Regular'
+  text-align: center
+  font-size: 1.2rem
+  color: black
+  width: fit-content
+  height: max-content
+  padding: 0 -1rem 0
+  margin: 0
+  height: 1rem
+  background-color: white
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+
+  /* background-image: radial-gradient(#000000 0.8px, transparent 0.8px), radial-gradient(#000000 0.8px, #ffffff 0.8px);
+   *background-size: 6px 4px;
+   *background-position: 5px 0, 2px, 2px;
+
+#nivel1_btn, #nivel2_btn, #nivel3_btn
+  margin: 0 2rem 0
+  padding: 0 1rem 0
+  display: flex
+  flex-direction: row
+  align-items: center
+  font-family: 'FT88-Bold'
+  color: black
+  font-size: 2rem
+  line-height: 3.5rem
+  width: max-content
+  cursor: pointer
+  height: 4.5rem
+  background-color: white
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+
+.level_img
+  height: 2.5rem
+  animation-name: floating
+  animation-duration: 0.15s
+  animation-iteration-count: infinite
+  animation-timing-function: step-start
+
+@keyframes floating
+  from
+    -webkit-transform: translate(0, 0px)
+    transform: translate(0, 0px)
+
+  65%
+    -webkit-transform: translate(3px, 0)
+    transform: translate(3px, 0)
+
+  to
+    -webkit-transform: translate(0, 0px)
+    transform: translate(0, 0px)
+
+/*///// MENÚ NIVELES+INSTRUCCIONES MOVIL //////
+
+.menu_information_m
+  display: none
+  flex-direction: column
+  align-items: center
+
+#nivel1_btnm, #nivel2_btnm, #nivel3_btnm
+  margin: 0 0 0 0
+  padding: 1rem
+  display: flex
+  flex-direction: row
+  align-items: center
+  font-family: 'FT88-Bold'
+  color: black
+  font-size: 2rem
+  line-height: 3.5rem
+  width: max-content
+  cursor: pointer
+  height: 4.5rem
+  background-color: white
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+
+/*///// HEADER COMÚN //////
+
+.header_lv_3
+  margin: 1rem 1rem 0 1rem
+  display: flex
+  justify-content: space-between
+
+  img
+    height: 60px
+
+#icon_home
+  display: flex
+  margin: 0 0 0 0
+  flex-direction: column
+  text-decoration: none
+
+.level_bar
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+#level_img
+  margin-left: 0.2rem
+  text-align: center
+  height: 2.5rem
+  width: auto
+
+.actual_level
+  margin-left: 4rem
+  width: fit-content
+  display: flex
+  flex-direction: row
+  gap: 1rem
+  background-color: white
+  opacity: 1
+  border: 4px solid #000000
+  border-style: double
+
+#lvl_name
+  line-height: 2.5rem
+  font-size: 1.5rem
+  font-family: 'FT88-Bold'
+  height: 2.5rem
+  color: black
+  padding: 0 1rem 0
+  background-image: radial-gradient(#000000 0.8px, transparent 0.8px), radial-gradient(#000000 0.8px, #ffffff 0.8px)
+  background-size: 6px 4px
+  background-position: 5px 0, 2px, 2px
+
+#lvl_number
+  line-height: 2.5rem
+  font-size: 1.5rem
+  letter-spacing: -0.2rem
+  font-family: 'FT88-Regular'
+  background-color: white
+
+.icon_title
+  background-color: white
+  font-size: 0.875rem
+  color: #000000
+  font-family: 'FT88-Bold'
+  text-decoration: none
+  margin: 0.5rem 0 0
+  text-align: center
+  justify-content: center
+  border: 1.5px inset solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+
+#nextquestion
+  align-self: flex-end
+  width: 0.5rem
+
+.scrore_board
+  display: flex
+  height: 100%
+  flex-direction: column
+
+  /* background-image: url(../img/score_tab.png);
+   *background-size: cover;
+   *height: 90px;
+   *width: 67px;
+
+  justify-content: center
+  align-items: center
+
+#contador
+  font-family: 'FT88-Bold'
+  font-size: 1.5rem
+  height: 90px
+  width: 67px
+  color: #000000
+  background-image: url(../img/score_tab.png)
+  background-size: cover
+  text-align: center
+  line-height: 100px
+  align-self: cneter
+
+.pregunta
+  color: white
+  line-height: 2rem
+  font-family: 'FT88-Regular'
+  font-size: 1.25rem
+  height: 2rem
+  margin: auto
+  padding: 0 2rem 0
+  background-color: black
+  border: 1.5px inset solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+  overflow-wrap: break-word
+
+.nextquestion
+  display: none
+  font-family: 'FT88-Regular'
+  text-align: center
+  height: max-content
+  padding: 10px
+  width: 2rem
+  min-width: fit-content
+  background-color: #ffffff
+  border-radius: 50%
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+  overflow-wrap: break-word
+
+  &:hover
+    background-color: black
+    color: white
+
+/*///// HEADER COMÚN MOVIL //////
+
+.header_lv_m
+  width: 100%
+  gap: 0.5rem
+  display: none
+  flex-direction: column
+  justify-content: space-between
+
+  img
+    height: 2rem
+
+.header_m1
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.level_bar_m2
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+#lvl_name_m
+  line-height: 1.5rem
+  font-size: 1rem
+  height: 1.5rem
+  padding: 0 0.5rem 0
+  font-family: 'FT88-Bold'
+  color: black
+  background-image: radial-gradient(#000000 0.8px, transparent 0.8px), radial-gradient(#000000 0.8px, #ffffff 0.8px)
+  background-size: 6px 4px
+  background-position: 5px 0, 2px, 2px
+
+#lvl_number_m
+  line-height: 1.5rem
+  font-size: 1rem
+  letter-spacing: -0.2rem
+  font-family: 'FT88-Regular'
+  background-color: white
+
+#contador_m
+  font-family: 'FT88-Bold'
+  font-size: 1rem
+  background-image: url(../img/score_tab.png)
+  height: 45px
+  width: 34.5px
+  line-height: 50px
+  color: #000000
+  background-size: cover
+  text-align: center
+  align-self: cneter
+
+.pregunta_m
+  color: white
+  font-family: 'FT88-Regular'
+  font-size: 1rem
+  padding: 0.5rem 1rem 0
+  height: max-content
+  line-height: 1.5rem
+  margin: 0
+  background-color: black
+  border: 1.5px inset solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+  overflow-wrap: break-word
+
+.nextquestion_m
+  display: none
+  font-family: 'FT88-Regular'
+  height: max-content
+  padding: 10px
+  width: max-content
+  min-width: fit-content
+  background-color: #ffffff
+  border-radius: 50%
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+  overflow-wrap: break-word
+
+  &:hover
+    background-color: black
+    color: white
+
+/*/////////CONTENEDOR NIVEL 1/////
+
+.areal1
+  display: flex
+  justify-content: center
+  height: 30rem
+  padding: 10px
+  width: 30rem
+  min-width: fit-content
+  background-color: #ffffff
+  border-radius: 50%
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+
+#lv1_img
+  width: 20rem
+  object-fit: contain
+
+.level_options_1
+  display: flex
+  flex-direction: column
+  width: 30rem
+  margin: 0 0 0 12rem
+
+.level1_options
+  display: flex
+  flex-direction: row
+
+.lv1_op
+  margin: 0 2rem 0
+  padding: 0 1rem 0
+  display: flex
+  flex-direction: row
+  align-items: center
+  font-family: 'FT88-Bold'
+  color: black
+  font-size: 1.5rem
+  width: max-content
+  cursor: pointer
+  height: 4.5rem
+  background-color: white
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+  overflow-wrap: break-word
+
+#l1_caja1
+  order: 1
+
+#l1_caja2
+  order: 2
+
+/*///// CONTENEDOR DEL NIVEL 2 //////
+
+.level_container
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+  justify-content: center
+  width: 100%
+
+.level_container_inside
+  gap: 16px
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  height: 38rem
+
+  /* justify-content: space-between;
+
+.box_bar
+  font-family: 'FT88-Regular'
+  text-align: center
+  line-height: 1.5rem
+  font-size: 0.75rem
+  height: 1.5rem
+  width: 100%
+  background-color: white
+  border: 0.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 2px 2px 0px #000000
+
+.level_options
+  display: flex
+  flex-direction: column
+  width: 30rem
+
+.level_options_original
+  display: flex
+  flex-direction: row
+  background-color: white
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+  opacity: 1
+  background-image: radial-gradient(#161616 1px, #ffffff 1px)
+  background-size: 10px 10px
+
+  /* flex-wrap: wrap;
+  /* height: 35rem;
+
+.level_options_px
+  display: flex
+  flex-direction: row
+  background-color: white
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+
+  /* flex-wrap: wrap;
+  /* height: 35rem;
+
+  img
+    /* width: 100%;
+    width: 14rem
+    object-fit: contain
+
+.level_options_original img
+  width: 100%
+  object-fit: contain
+
+/* .level_options_img div img {
+ *  height: 25rem;
+ *}
+
+.cajas
+  touch-action: none
+  border-radius: 5px
+  color: white
+
+  /* padding: 1em;
+
+#l2_caja1
+  order: 1
+
+#l2_caja2
+  order: 2
+
+/* .dropzones {
+ *  display: flex;
+ *}
+
+.areal2
+  display: flex
+  height: 40rem
+  padding: 10px
+  width: 20rem
+  min-width: fit-content
+  background-color: #ffffff
+
+  /* opacity: 1;
+   *background-image: radial-gradient(#000000 0.8px, #ffffff 0.8px);
+   *background-size: 13px 13px;
+  border-radius: 50%
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+
+.drop-activated.areal2
+  background-image: radial-gradient(#000000 0.8px, #25ff58 0.8px)
+
+#nivel1, #nivel3, #juego
+  display: none
+
+.body
+  margin: auto
+  height: 35rem
+
+/*/////////NIVEL 3//////////
+
+.areal3
+  display: flex
+  height: 40rem
+  padding: 10px
+  width: 20rem
+  min-width: fit-content
+  background-color: #ffffff
+
+  /* opacity: 1;
+   *background-image: radial-gradient(#000000 0.8px, #ffffff 0.8px);
+   *background-size: 13px 13px;
+  border-radius: 50%
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+
+.level3_options
+  display: flex
+  flex-direction: row
+
+.lv3_op
+  margin: 0 0.75rem 0
+  padding: 1rem
+  display: flex
+  flex-direction: row
+  align-items: center
+  font-family: 'FT88-Regular'
+  color: black
+  font-size: 1rem
+  width: max-content
+  cursor: pointer
+  background-color: white
+  border: 1.5px solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+  overflow-wrap: break-word
+
+.level_options_op
+  display: flex
+  flex-direction: column
+  width: 30rem
+
+.level_options_3
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  width: 30rem
+  margin: 0 0 0 8rem
+
+#l3_caja1
+  order: 1
+
+#l3_caja2
+  order: 2
+
+#lv3_img
+  margin: auto
+  height: 35rem
+
+/*////////RESPUESTA/EXPLICACION//////////
+
+.correct_box
+  z-index: 5
+  display: flex
+  flex-direction: column
+  position: fixed
+  width: 300px
+  height: max-content
+  top: 50%
+  left: 75%
+
+  /* bring your own prefixes
+  transform: translate(-50%, -50%)
+  background-color: white
+  border: 1.5px inset solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+  margin: 0%
+
+#answer_because
+  font-family: 'FT88-Bold'
+  font-size: 1.2rem
+  padding: 0 0 0.5rem 1rem
+  background-color: white
+  border: 1.5px inset solid #000000
+  box-sizing: border-box
+  box-shadow: 4px 4px 0px #000000
+
+#correct_text
+  font-size: 1rem
+  margin: 2rem
+  font-family: 'FT88-Regular'
+
+/*///// PANTALLA FINAL //////
+
+#final
+  display: none
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@media screen and (max-width: 510px)
+  #iniciar_juego
+    display: none
+
+  #iniciar_juego_m
+    display: flex
+
+  /*//MENU NIVELES//
+
+  .menuContainer
+    height: max-content
+    align-items: flex-start
+
+  #instruction
+    line-height: 1rem
+    font-size: 0.875rem
+    height: fit-content
+    padding: 0 0 0
+    width: fit-content
+
+  .head_menu
+    margin: 1rem 0 1rem
+    align-items: center
+
+  #police_menu
+    margin: 0 0 1rem
+    left: initial
+
+  .lvl_info_container
+    flex-direction: none
+
+  .lv_info
+    opacity: 1
+    font-size: 0.75rem
+
+  .lvl_title
+    font-size: 1rem
+
+  #nivel1_btn, #nivel2_btn, #nivel3_btn
+    margin: 0 0 0 0
+
+  /*//HEADER COMÚN//
+
+  .header_lv_3
+    display: none
+
+  .header_lv_m
+    display: flex
+
+  .icon_title
+    font-size: 0.75rem
+
+  .level_bar
+    justify-content: flex-start
+
+  #level_img
+    margin-left: 0.1rem
+    height: 1.5rem
+
+  .icon_title
+    font-size: 0.8rem
+
+  .actual_level
+    margin-left: 0.5rem
+    width: max-content
+    gap: 0.5rem
+
+  .level_container_inside
+    height: max-content
+
+  .level_container
+    height: max-content
+    flex-direction: column
+    height: max-content
+    gap: 2rem
+
+  /*//NIVEL 1//
+
+  .areal1
+    height: 15rem
+    padding: 5px
+    width: 15rem
+
+  #lv1_img
+    width: 10rem
+
+  .level_options_1
+    width: 15rem
+    margin: 0 0 0 1rem
+
+  .lv1_op
+    margin: 0 1rem 0
+    padding: 0 0.5rem 0
+    font-size: 1rem
+    height: 3rem
+
+  .level_container
+    margin: 2rem 0 0
+    align-items: center
+
+  /*///// CONTENEDOR DEL NIVEL 2 //////
+
+  .level_container_inside
+    gap: initial
+    height: max-content
+
+  .box_bar
+    line-height: 1rem
+    height: 1rem
+
+  .level_options
+    width: 12rem
+
+  .level_options_px
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+    img
+      width: 7rem
+
+  .areal2
+    height: 19rem
+    padding: 5px
+    width: 10rem
+
+  .body
+    height: 17.5rem
+
+  /*/////////NIVEL 3//////////
+
+  .areal3
+    height: 19rem
+    padding: 5px
+    width: 10rem
+
+  .lv3_op
+    font-size: 0.875rem
+
+  .level_options_op
+    width: 22rem
+
+  .level_options_3
+    width: 100%
+    margin: 0 2rem 0
+    flex-direction: column
+    align-items: center
+
+  #lv3_img
+    height: 17.5rem
+
+  /*////////RESPUESTA/EXPLICACION//////////
+
+  .correct_box
+    z-index: 0
+    position: initial
+    width: 15rem
+    top: initial
+    left: initial
+    transform: none
+
+  #answer_because
+    font-size: 1rem
+
+  #correct_text
+    font-size: 0.875rem
+    margin: 1rem

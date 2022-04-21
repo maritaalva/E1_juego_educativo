@@ -1,0 +1,252 @@
+{
+    "niveles": [
+        {
+            "id": 0,
+            "lnumber": "level 1:",
+            "lname": "Who's that bag from?",
+            "lpregunta": "Can you identify this blurred bag?"
+        },
+        {
+            "id": 1,
+            "lnumber": "level 2:",
+            "lname": "The fashion fingerprints",
+            "lpregunta": "Who did it first, Versace or Naked Wolfe?"
+        },
+        {
+            "id": 2,
+            "lnumber": "level 3:",
+            "lname": "The fashion fingerprints",
+            "lpregunta": "Which characteristic identify the fashion brand 'Richard Quinn?'"
+        }
+    ],
+    "nivel1": [
+        {
+            "id": 0,
+            "nquestion": "Can you identify this blurred bag?",
+            "option1": "Coperni",
+            "option2": "Valentino",
+            "clue_img": "assets/img/wtib_1.png",
+            "clue_img_px": "assets/img/wtib_1_px.png",
+            "answer": "The Swipe Bag,now offered in multiple variations such as the Ring Swipe, Mini Swipe, Baguette Swipe and Melted Swipe, was first introduced in the duo's Fall/Winter 2019 collection.",
+            "c1": "1",
+            "c2": "2"
+        },
+        {
+            "id": 1,
+            "nquestion": "Can you identify this blurred bag?",
+            "option1": "Prada",
+            "option2": "Balenciaga",
+            "clue_img": "assets/img/wtib_2.png",
+            "clue_img_px": "assets/img/wtib_2_px.png",
+            "answer": "The Hoop Bag and variations can be seen on the 2003 Spring/Summer runway.",
+            "c1": "2",
+            "c2": "1"
+        },
+        {
+            "id": 2,
+            "nquestion": "Can you identify this blurred bag?",
+            "option1": "Bottega Veneta",
+            "option2": "Celine",
+            "clue_img": "assets/img/wtib_3.png",
+            "clue_img_px": "assets/img/wtib_3_px.png",
+            "answer": "Since the Jodie Bag was release in FW 2020, it has since crept into popularity and gained It Bag status",
+            "c1": "2",
+            "c2": "2"
+        },
+        {
+            "id": 3,
+            "nquestion": "Can you identify this blurred bag?",
+            "option1": "Dior",
+            "option2": "Fendi",
+            "clue_img": "assets/img/wtib_4.png",
+            "clue_img_px": "assets/img/wtib_4_px.png",
+            "answer": "Designed in 1999, Dior's recognizable Saddle Bag debuted on the runway in John Galliano's Spring/Summer 2000 collection and the rest is history.",
+            "c1": "2",
+            "c2": "1"
+        },
+        {
+            "id": 4,
+            "nquestion": "Can you identify this blurred bag?",
+            "option1": "Dior",
+            "option2": "Burberry",
+            "clue_img": "assets/img/wtib_5.png",
+            "clue_img_px": "assets/img/wtib_5_px.png",
+            "answer": "The Lady Dior was first introduced in 1994 under the creative direction of Christian Dior's successor, Gianfranco Ferré.",
+            "c1": "1",
+            "c2": "2"
+        },
+        {
+            "id": 5,
+            "nquestion": "Can you identify this blurred bag?",
+            "option1": "As Four",
+            "option2": "Coperni",
+            "clue_img": "assets/img/wtib_6.png",
+            "clue_img_px": "assets/img/wtib_6_px.png",
+            "answer": "The Circle Bag is a very rare bag from the collaboration between As Four and Kate Spade in 2005",
+            "c1": "2",
+            "c2": "1"
+        },
+        {
+            "id": 6,
+            "nquestion": "Can you identify this blurred bag?",
+            "option1": "Hermès",
+            "option2": "Channel",
+            "clue_img": "assets/img/wtib_7.png",
+            "clue_img_px": "assets/img/wtib_7_px.png",
+            "answer": "The Birkin bag is a line of tote bag, introduced in 1984 by the French luxury goods maker Hermès. Birkin bags are handmade from leather and are named after the English actress and singer Jane Birkin.",
+            "c1": "1",
+            "c2": "2"
+        },
+        {
+            "id": 7,
+            "nquestion": "Can you identify this blurred bag?",
+            "option1": "Hermès",
+            "option2": "Channel",
+            "clue_img": "assets/img/wtib_7_px.png",
+            "clue_img_px": "assets/img/wtib_7_px.png",
+            "answer": "The Birkin bag is a line of tote bag, introduced in 1984 by the French luxury goods maker Hermès. Birkin bags are handmade from leather and are named after the English actress and singer Jane Birkin.",
+            "c1": "1",
+            "c2": "2"
+        }
+    ],
+    "nivel2": [
+        {
+            "id": 0,
+            "nquestion": "Who did it first, Versace or Naked Wolfe?",
+            "model_dol": "assets/img/body1.png",
+            "option1": "assets/img/sto_1_1_px.png",
+            "option2": "assets/img/sto_1_2_px.png",
+            "option1px": "assets/img/sto_1_1_px.png",
+            "option2px": "assets/img/sto_1_2_px.png",
+            "answer": "Naked Wolfe is a brand focused on the chunky platform, being some of the silhouettes of their designs very identifiable. ",
+            "wrong": "Try again!",
+            "positionx": "556",
+            "positiony": "106",
+            "c1": "60",
+            "c2": "560"
+        },
+        {
+            "id": 1,
+            "nquestion": "Who did it first, Telfar or Guess?",
+            "model_dol": "assets/img/body2.png",
+            "option1": "assets/img/sto_2_1.png",
+            "option2": "assets/img/sto_2_2.png",
+            "option1px": "assets/img/sto_2_1_px.png",
+            "option2px": "assets/img/sto_2_2_px.png",
+            "answer": "Major fashion publications have called it an 'it-bag' and the 'most important accessory of the decade,' and it's colloquially known as the 'Bushwick Birkin' for its combination of status and affordability. ",
+            "wrong": "Try again!",
+            "c1": "2",
+            "c2": "1"
+        },
+        {
+            "id": 2,
+            "nquestion": "Who did it first, Bottega Veneta or Julian Hakes?",
+            "model_dol": "assets/img/body3.png",
+            "option1": "assets/img/sto_3_1.png",
+            "option2": "assets/img/sto_3_2.png",
+            "option1px": "assets/img/sto_3_1_px.png",
+            "option2px": "assets/img/sto_3_2_px.png",
+            "answer": "As an architect, Hakes had been working in London for more than 10 years before shifting the focus of his work towards fashion and shoes in particular.",
+            "wrong": "Try again!",
+            "c1": "2",
+            "c2": "1"
+        },
+        {
+            "id": 3,
+            "nquestion": "Who did it first, Walter Van Beirendonck or Louis Vuitton?",
+            "model_dol": "assets/img/body4.png",
+            "option1": "assets/img/sto_4_1.png",
+            "option2": "assets/img/sto_4_2.png",
+            "option1px": "assets/img/sto_4_1_px.png",
+            "option2px": "assets/img/sto_4_2_px.png",
+            "answer": "A collection named “WOEST” ( translate from Dutch is “furious”, “wild”), where he make a fashion stament to express his anger toward's the world in that year, and made in honour of David Bowie.With his very recognisible strong graphics or innovating cuts and unexpected colour combinations. ",
+            "wrong": "Try again!",
+            "c1": "1",
+            "c2": "2"
+        },
+        {
+            "id": 4,
+            "nquestion": "Who did it first, Walter Balenciaga or Paula Cánovas del Vas?",
+            "model_dol": "assets/img/body5.png",
+            "option1": "assets/img/sto_5_1.png",
+            "option2": "assets/img/sto_5_2.png",
+            "option1px": "assets/img/sto_5_1_px.png",
+            "option2px": "assets/img/sto_5_2_px.png",
+            "answer": "Paula is a spanish designer based in London, who launched her signature “Diablo” shoes inspired by hooves, featuring pointed ends met by a shallow dip above the toe.",
+            "wrong": "Try again!",
+            "c1": "2",
+            "c2": "1"
+        },
+        {
+            "id": 5,
+            "nquestion": "Who did it first, Walter Balenciaga or Paula Cánovas del Vas?",
+            "model_dol": "assets/img/body5.png",
+            "option1": "assets/img/sto_5_1.png",
+            "option2": "assets/img/sto_5_2.png",
+            "option1px": "assets/img/sto_5_1_px.png",
+            "option2px": "assets/img/sto_5_2_px.png",
+            "answer": "Paula is a spanish designer based in London, who launched her signature “Diablo” shoes inspired by hooves, featuring pointed ends met by a shallow dip above the toe.",
+            "wrong": "Try again!",
+            "c1": "2",
+            "c2": "1"
+        }
+        
+    ],
+    "nivel3": [
+        {
+            "id": 0,
+            "nquestion": "Which characteristic identify the fashion brand 'Richard Quinn?'",
+            "option1": "Use of organic pattern, mostly florar patters head to toe outfits",
+            "option2": "Use of futuristic and optical ilusion patterns, head to toe outfits with the same pattern",
+            "clue_img": "assets/img/tff_1.png",
+            "clue_img_px": "assets/img/tff_1_px.png",
+            "answer": "Raised in South East London, Quinn received a Fashion MA from Central Saint Martins and established his label in 2016. Specialising in womenswear and textiles, he has been praised for his bold use of colour and floral patterns",
+            "c1": "1",
+            "c2": "2"
+        },
+        {
+            "id": 1,
+            "nquestion": "Which characteristic identify the fashion brand 'Paco Rabanne?'",
+            "option1": "Use of metal mesh and chainmails as fabrics to make 'sculptural' dress and accesories",
+            "option2": "Use of reflective metallic fabrics inspired in the space",
+            "clue_img": "assets/img/tff_2.png",
+            "clue_img_px": "assets/img/tff_2_px.png",
+            "answer": "For the debut of his namesake brand in 1966, he presented “Manifesto: 12 unwearable dresses in contemporary materials.” Over the next few years, he would experiment with looks made from moulded plastics, hammered metal, aluminum jersey and knitted fur",
+            "c1": "2",
+            "c2": "1"
+        },
+        {
+            "id": 2,
+            "nquestion": "Which characteristic identify the fashion brand 'Mugler' Casey Cadwallader?",
+            "option1": "Use of sheer fabrics contrat with plain colors and vertical lines",
+            "option2": "Use of big blazers with shoulder pads with no silhouette",
+            "clue_img": "assets/img/tff_3.png",
+            "clue_img_px": "assets/img/tff_3_px.png",
+            "answer": "Appointed as Creative Director of MUGLER fashion in January 2018,his clothes play with the architectural and the sensual, but in a much more functional way: jackets with contained volumes, dresses with strategic openings or tight-fitting jumpsuits in cotton, elastane and mesh perfectly wearable. ",
+            "c1": "2",
+            "c2": "2"
+        },
+        {
+            "id": 3,
+            "nquestion": "Which characteristic identify the fashion brand 'Chanel'?",
+            "option1": "Use of tweed fabric and classic silouttes",
+            "option2": "Use of plain monochrome suits and classic silhouette",
+            "clue_img": "assets/img/tff_4.png",
+            "clue_img_px": "assets/img/tff_4_px.png",
+            "answer": "Tweed, being more durable than other fabrics that Chanel favoured such as jersey, cotton pique, and sailcloth, became the main symbol of the House of Chanel; and thanks to her passion for tweed we have been wearing it for decades and will continue to do so for a long time to come.",
+            "c1": "2",
+            "c2": "1"
+        },
+        {
+            "id": 4 ,
+            "nquestion": "Which characteristic identify the fashion brand 'Chanel'?",
+            "option1": "Use of tweed fabric and classic silouttes",
+            "option2": "Use of plain monochrome suits and classic silhouette",
+            "clue_img": "assets/img/tff_4_px.png",
+            "clue_img_px": "assets/img/tff_4_px.png",
+            "answer": "Tweed, being more durable than other fabrics that Chanel favoured such as jersey, cotton pique, and sailcloth, became the main symbol of the House of Chanel; and thanks to her passion for tweed we have been wearing it for decades and will continue to do so for a long time to come.",
+            "c1": "2",
+            "c2": "1"
+        }
+    ]
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/police_web_icon.png" sizes="50x32" />
+    <title>Fahion Police</title>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!--portada-->
+    <div class="portada">
+        <img id="imgnokia" src="assets/img/nokia_1.png">
+        <a type="button" id="iniciar_juego">accept</a>
+        <a type="button" id="iniciar_juego_m">accept</a>
+
+    </div>
+
+
+    <!--niveles web-->
+
+    <div class="menu_information">
+        <div class="head_menu">
+           <img id="police_menu" src="assets/img/police_fashion_logo_.png">
+        <p id="instruction">Start level 1 to unlock the other levels</p>
+        </div>
+    <div class="menuContainer" id="menuContainer">
+        <a type="button" id="nivel1_btn">
+            <img class="level_img" src="assets/img/mobile_icon.png">
+            level 1
+        </a>
+        <a type="button" id="nivel2_btn">
+            <img class="level_img" src="assets/img/mobile_icon.png">
+            level 2
+        </a>
+        <a type="button" id="nivel3_btn">
+            <img class="level_img" src="assets/img/mobile_icon.png">
+            level 3
+        </a>
+    </div>
+        <div class="lvl_info_container">
+            <div id="lv1_info" class="lv_info">
+                <a class="lvl_title">who's that bag from ?</a>
+                <p>At the end of the 90s, accessories stopped being a secondary item when it comes to dressing and
+                    became the protagonists such as the it-bags.</p>
+            </div>
+            <div id="lv2_info" class="lv_info">
+                <a class="lvl_title">spot the original</a>
+                <p>With many houses presenting more than 4 collections each year, it cannot be expected of creatives
+                    that each piece must be a “new look”.But there's still a fine line between copy and inspiration</p>
+            </div>
+            <div id="lv3_info" class="lv_info">
+                <a class="lvl_title">the fashion fingerprints</a>
+                <p>Identifying each designer clothing is just like any other learned skill, it takes time to have that
+                    knowledge</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--niveles movil-->
+    <div class="menu_information_m">
+        <div class="head_menu">
+            <img id="police_menu" src="assets/img/police_fashion_logo_.png">
+         <p id="instruction">Start level 1 to unlock the other levels</p>
+         </div>
+        <div>
+            <a type="button" id="nivel1_btnm">
+                <img class="level_img" src="assets/img/mobile_icon.png">
+                level 1
+            </a>
+            <div id="lv1_info_m" class="lv_info">
+                <a class="lvl_title">who's that bag from ?</a>
+                <p>At the end of the 90s, accessories stopped being a secondary item when it comes to dressing and
+                    became the protagonists such as the it-bags.</p>
+            </div>
+        </div>
+        <div>
+            <a type="button" id="nivel2_btnm">
+                <img class="level_img" src="assets/img/mobile_icon.png">
+                level 2
+            </a>
+            <div id="lv2_info_m" class="lv_info">
+                <a class="lvl_title">spot the original</a>
+                <p>With many houses presenting more than 4 collections each year, it cannot be expected of creatives
+                    that each piece must be a “new look”.But there's still a fine line between copy and inspiration</p>
+            </div>
+        </div>
+        <div>
+            <a type="button" id="nivel3_btnm">
+                <img class="level_img" src="assets/img/mobile_icon.png">
+                level 3
+            </a>
+            <div id="lv3_info_m" class="lv_info">
+                <a class="lvl_title">the fashion fingerprints</a>
+                <p>Identifying each designer clothing is just like any other learned skill, it takes time to have that
+                    knowledge</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="juego">
+
+        <!--cabecera común web-->
+        <div class="header_lv_3">
+
+            <a id="icon_home" "><img id=" logo_page" src="assets/img/police_fashion_logo_.png">
+                <h3 class="icon_title">home</h3>
+            </a>
+            <div class="level_bar">
+                <div class="actual_level">
+                    <img id="level_img" src="assets/img/mobile_icon.png">
+                    <a id="lvl_number">level 1:</a>
+                    <a id="lvl_name">In terms of fashion</a>
+                </div>
+                <div class="pregunta">
+                    With this definition
+                </div>
+            </div>
+            <a type="button" class="nextquestion">NEXT<br>QUESTION</a>
+            <div class="scrore_board">
+                <div id="contador"><a style="padding: auto;">0</a></div>
+                <div class="icon_title">score</div>
+            </div>
+        </div>
+        <!--cabecera común movil-->
+        <div class="header_lv_m">
+            <div class="header_m1">
+                <a id="icon_home_m"><img id=" logo_page" src="assets/img/police_fashion_logo_.png">
+                    <h3 class="icon_title">home</h3>
+                </a>
+                <button class="nextquestion_m">NEXT<br>QUESTION</button>
+                <div class="scrore_board">
+                    <div id="contador_m"><a style="padding: auto;">0</a></div>
+                    <div class="icon_title">score</div>
+                </div>
+            </div>
+            <div class="level_bar_m2">
+                <div class="actual_level">
+                    <img id="level_img" src="assets/img/mobile_icon.png">
+                    <a id="lvl_number_m">level 1:</a>
+                    <a id="lvl_name_m">In terms of fashion</a>
+                </div>
+                <div class="pregunta_m">
+                    With this definition
+                </div>
+            </div>
+
+        </div>
+
+        <!--nivel1-->
+        <div id="nivel1">
+            <div class="level_container">
+                <div class="level_container_inside">
+                    <div class="level_options_1">
+                        <div class="box_bar">choose one option</div>
+                        <div class="level1_options">
+                            <div id="l1_caja1" class="lv1_op"><a id="l1op_correct">Coperni</a></div>
+                            <div id="l1_caja2" class="lv1_op"><a id="l1op_incorrect">Valentino</a></div>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <div class="areal1">
+                                <img id="lv1_img" src="assets/img/wtib_1.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="correct1"></div>
+            </div>
+        </div>
+
+        <!--nivel2-->
+        <div id="nivel2">
+            <div class="level_container">
+                <div class="level_container_inside">
+                    <div class="level_options">
+                        <div class="box_bar">original photos</div>
+                        <div class="level_options_original">
+                            <div><img src="assets/img/sto_1_1.png" alt="" class="l2oop1"></div>
+                            <div><img src="assets/img/sto_1_2.png" alt="" class="l2oop2"></div>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <div class="box_bar">drag to the avatar</div>
+                            <div class="level_options_px">
+                                <div id="l2_caja1" class="cajas"><img class="l2op1" id="l2op1"
+                                        src="assets/img/sto_1_1_px.png">
+                                </div>
+                                <div id="l2_caja2" class="cajas"><img class="l2op2" id="l2op2"
+                                        src="assets/img/sto_1_2_px.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="areal2">
+                        <img class="body" src="assets/img/body1.png">
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div id="correct2"></div>
+            </div>
+
+        </div>
+
+        <!--nivel3-->
+        <div id="nivel3">
+            <div class="level_container">
+                <div class="level_container_inside">
+                    <div class="level_options_3">
+                        <div class="level_options_op">
+                            <div class="box_bar">choose one option</div>
+                            <div class="level3_options">
+                                <div id="l3_caja1" class="lv3_op"><a id="l3op_correct">Use of organic pattern, mostly
+                                        florar patters head to toe outfits</a></div>
+                                <div id="l3_caja2" class="lv3_op"><a id="l3op_incorrect">Use of futuristic and optical
+                                        ilusion patterns, head to toe outfits with the same pattern</a></div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <div class="areal3">
+                                <img id="lv3_img" src="assets/img/tff_1.png">
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                </div> 
+                <div id="correct3"></div>
+            </div>
+        </div>
+        <!--pantallla final-->
+       
+    </div> 
+    <div id="final">
+        </div>
+</body>
+
+</html>

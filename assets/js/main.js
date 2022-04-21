@@ -129,20 +129,7 @@ window.onload = () => {
         menuInfo.style.display = "none";
         menuInfoM.style.display = "flex";
     }
-    // //Cambio imagenes nivel3
-    // let cambio_img_level_3 = document.getElementById("img_l3");
 
-    // let images_level3 = ["assets/img/title_level_3.png", "assets/img/title_level_3_3.png"];
-    // let indexl3 = 0;
-
-    // function changeImageLevel3() {
-    //     cambio_img_level_3.setAttribute("src", images_level3[indexl3]);
-    //     indexl3++;
-    //     if (indexl3 >= images_level3.length) {
-    //         indexl3 = 0;
-    //     }
-    // }
-    // setInterval(changeImageLevel3, 800);
 
     //información e instrucciones de los niveles
     lvl1_btn.addEventListener('mouseover', (e) => {
@@ -252,11 +239,7 @@ window.onload = () => {
     }
 
     function siguientePregunta() {
-        //op1.src = option1[contador];
-        //op2.src = option2[contador];
-        //body.src = bodytype[contador];
-     
-        //pregunta.innerText = nquestion[contador];
+
         if (nivel == 1) {
             contadorL1++;
 
@@ -267,6 +250,9 @@ window.onload = () => {
             l1opI.innerText = nivel1_data[contadorL1].option2;
             lvlPregunta.innerText = nivel1_data[contadorL1].nquestion;
             correctAnswer1.innerHTML = ``;
+            l1caja1.style.backgroundColor = 'white';
+            l1caja2.style.backgroundColor = 'white';
+
             nextq.style.display = "none";
 
             if (nivel1_data[contadorL1].id == 7) {
@@ -331,6 +317,7 @@ window.onload = () => {
 
 
 
+/////////////////////////////////////////////////////////////////CARGA VERSIÓN MÓVIL////////////////////////////////////////////////////
 
     lvl1_btnm.addEventListener('click', (e) => {
         nivel = 1;
@@ -361,11 +348,6 @@ window.onload = () => {
 
     function siguientePreguntam() {
 
-        //op1.src = option1[contador];
-        //op2.src = option2[contador];
-        //body.src = bodytype[contador];
-
-        //pregunta.innerText = nquestion[contador];
         if (nivel == 1) {
             contadorL1++;
             l1caja1.style.order = nivel1_data[contadorL1].c1;
@@ -375,6 +357,10 @@ window.onload = () => {
             l1opI.innerText = nivel1_data[contadorL1].option2;
             lvlPreguntaM.innerText = nivel1_data[contadorL1].nquestion;
             correctAnswer1.innerHTML = ``;
+            l1caja1.style.backgroundColor = 'white';
+            l1caja2.style.backgroundColor = 'white';
+
+
             nextqm.style.display = "none";
             if (nivel1_data[contadorL1].id == 7) {
                 juego.style.display = "none";
@@ -420,6 +406,9 @@ window.onload = () => {
             l3opI.innerText = nivel3_data[contadorL3].option2;
             lvlPreguntaM.innerText = nivel3_data[contadorL3].nquestion;
             correctAnswer3.innerHTML = ``;
+            l3caja1.style.backgroundColor = 'white';
+            l3caja2.style.backgroundColor = 'white';
+
             nextqm.style.display = "none";
             if (nivel3_data[contadorL3].id == 4) {
                 juego.style.display = "none";
@@ -433,6 +422,11 @@ window.onload = () => {
     }
 
     count = 0;
+
+
+
+
+
 
     ////////////////////NIVEL 1////////////
     function respuestaCorrecta() {
@@ -448,20 +442,18 @@ window.onload = () => {
         counter.style.color = '#64ffa7';
         counterM.innerHTML = count;
         counterM.style.color = '#64ffa7';
+        l1caja1.style.backgroundColor = '#64ffa7';
         nextq.style.display = "block";
         nextqm.style.display = "block";
-
-
-
-
     });
+
     l1caja2.addEventListener('click', () => {
         count -= 25;
         counter.style.color = '#ff5757';
         counter.innerHTML = count;
         counterM.style.color = '#ff5757';
+        l1caja2.style.backgroundColor = '#ff5757';
         counterM.innerHTML = count;
-
     });
 
     console.log(correctAnswer1)
@@ -472,31 +464,15 @@ window.onload = () => {
     let positionx = 500;
     let positiony = 0;
 
-    // function change_img_px (event) {
-    //     const actionInfo = JSON.stringify(event.interaction.prepared, null, 2)
-
-    //     event.target.textContent = `action: ${actionInfo} \ncoords: ${event.pageX}, ${event.pageY}`
-    //   }
-
-    //   const interactable = interact('.opimg')
-
-    //   interactable.draggable({
-    //     listeners: {
-    //       move: change_img_px,
-    //       onend: showEventInfo,
-    //     }
-    //   })
     interact('.cajas')
         .draggable({
             inertia: true,
             modifiers: [
                 interact.modifiers.restrictRect({
-                    // restriction: 'parent',
                     endOnly: true
                 })
             ],
 
-            // autoScroll: true,
             listeners: {
                 end(e) {
                     let target = e.target
@@ -505,9 +481,6 @@ window.onload = () => {
                         target.style.webkitTransform =
                             target.style.transform =
                             'translate(0px, 0px)'
-                        // op1.src=nivel2_data[contador].option1;
-                        // op2.src=nivel2_data[contador].option2;
-
                         count -= 25;
                         counter.style.color = '#ff5757';
                         counter.innerHTML = count;
@@ -519,12 +492,8 @@ window.onload = () => {
                         target.setAttribute('data-y', 0)
                     } else {
                         target.style.webkitTransform =
-                            // target.style.transform =
-                            // 'translate(' + (wheight - (wheight - nivel2_data[contador].positionx)) + 'px, ' + (wwidth - (wwidth - nivel2_data[contador].positiony)) + 'px)'
 
                             correctAnswer2.innerHTML = `<div class="correct_box"><h3 id="answer_because">You're right!..</h3><p id="correct_text">${nivel2_data[contadorL2].answer}</p></div>`;
-                        // op1.src=nivel2_data[contador].option1px;
-                        // op2.src=nivel2_data[contador].option2px;
                         count += 50;
                         counter.style.color = '#64ffa7';
                         counter.innerHTML = count;
@@ -532,23 +501,10 @@ window.onload = () => {
                         counterM.style.color = '#64ffa7';
                         nextq.style.display = "block";
                         nextqm.style.display = "block";
-
-
-                        //siguientePregunta();
-                        // 'translate(' +(Math.sqrt(Math.pow(e.x0 - positionx, 2)) + 'px, ' + (Math.pow(e.y0 - positiony, 2) | 0)) + 'px)'
-                        //             (Math.sqrt(Math.pow(e.pageX - e.x0, 2) +
-                        //             Math.pow(e.pageY - e.y0, 2) | 0))
-                        //    .toFixed(2)
-                        // // update the posiion attributes
-                        // target.setAttribute('data-x', 0)
-                        // target.setAttribute('data-y', 0)
                     }
                 },
                 move(e) {
                     let target = e.target;
-                    // // target.src="assets/img/sto_2_1.png";
-                    // op2.src=nivel2_data[contador].option2px;
-                    // keep the dragged position in the data-x/data-y attributes
                     let x = (parseFloat(target.getAttribute('data-x')) || 0) + e.dx
                     let y = (parseFloat(target.getAttribute('data-y')) || 0) + e.dy
 
@@ -563,35 +519,19 @@ window.onload = () => {
                 },
             }
         });
-    console.log(correctAnswer2)
 
-    // console.log(elementdata)
-    // let elementAcc = document.querySelector("#caja1");
-    // let elementAcc = elementdata.c1;
-    // console.log(nivel2_data[contador].c1) 
-    // console.log(elementAcc)
-
-
-    //    let br = JSON.parsenivel2_data[contador].c1};
     interact('.areal2')
         .dropzone({
 
             accept: '#l2_caja1',
             ondragenter: function (event) {
-                // document.getElementById("op1").src="../assets/img/sto_4_1_px.png";
-                // op1.src=nivel1_data[contador].option1       kpx;
                 event.target.classList.add('drop-activated')
             },
             ondragleave: function (event) {
-                // document.getElementById("op1").src="../assets/img/sto_4_1.png";
-                // op1.src=nivel1_data[contador].option1;
-
                 event.target.classList.remove('drop-activated')
 
             },
             ondrop: function (event) {
-                // poner aquí el código de lo que tiene que pasar al soltar el elemento
-                // en el sitio correcto. (p.e. que desaparezca)
                 event.target.classList.remove('drop-activated')
 
 
@@ -601,7 +541,6 @@ window.onload = () => {
     /////////////////////NIVEL 3///////////////////////
     function respuestaCorrecta() {
         correctAnswer3.innerHTML = `<div class="correct_box"><h3 id="answer_because">You're right!..</h3><p id="correct_text">${nivel3_data[contadorL3].answer}</p></div>`;
-
     }
 
     l3opC.addEventListener('click', () => {
@@ -614,15 +553,17 @@ window.onload = () => {
         l3img.src = nivel3_data[contadorL3].clue_img_px;
         nextq.style.display = "block";
         nextqm.style.display = "block";
-
-
+        l3caja1.style.backgroundColor = '#64ffa7';
     });
+    
     l3opI.addEventListener('click', () => {
         count -= 25;
         counter.innerHTML = count;
         counter.style.color = '#ff5757';
         counterM.style.color = '#ff5757';
         counterM.innerHTML = count;
+        l3caja2.style.backgroundColor = '#ff5757';
+
 
     });
 };
